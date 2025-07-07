@@ -1,0 +1,126 @@
+/* Section: lifestyle-block
+ * ========================================================================== */
+.lifestyle-block {
+  padding: 30px 0;
+}
+.lifestyle-block h2 {
+  max-width: 100%;
+  text-align: right;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block h2 {
+    max-width: 900px;
+    margin-left: 20%;
+    font-size: 78px;
+  }
+}
+.lifestyle-block .content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block .content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.lifestyle-block .meal {
+  flex: 0 0 100%;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block .meal {
+    flex: 0 0 390px;
+  }
+}
+.lifestyle-block .meal p {
+  margin-top: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: auto;
+  max-width: 380px;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block .meal p {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    max-width: 260px;
+  }
+}
+.lifestyle-block .meal img {
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block .meal img {
+    display: block;
+  }
+}
+.lifestyle-block .box {
+  flex: 0 0 100%;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .lifestyle-block .box {
+    flex: 0 0 calc(100% - 430px);
+  }
+}
+.lifestyle-block .box-img {
+  max-width: 666px;
+  position: relative;
+}
+.lifestyle-block .box-img p {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: right;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .lifestyle-block .box-img p {
+    max-width: 330px;
+    margin-left: auto;
+    display: block;
+  }
+}
+.lifestyle-block .box-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.lifestyle-block .box span {
+  font-size: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1400px) {
+  .lifestyle-block .box span {
+    all: unset;
+    position: absolute;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .lifestyle-block .box span:nth-child(3) {
+    top: 30%;
+    right: -45%;
+  }
+  .lifestyle-block .box span:nth-child(4) {
+    top: 45%;
+    right: -45%;
+  }
+  .lifestyle-block .box span:nth-child(5) {
+    top: 60%;
+    right: -45%;
+  }
+  .lifestyle-block .box span:nth-child(6) {
+    top: 75%;
+    right: -45%;
+  }
+}
+
+/* Section: lifestyle-block
+ * ========================================================================== */

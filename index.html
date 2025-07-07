@@ -6,18 +6,254 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="public/css/app.css">
     <title>All Cook</title>
 </head>
 <body>
     <div id="header"></div>
     <div id="main-content">
-        <div id="hero"></div>
-    </div>
-    <div id="footer"></div>
-</body>
-<script src="index.js"></script>
+    <div id="hero"></div>
 
+<section class="artisanal-weekly">
+    <div class="container">
+        <div class="title">
+            <h2>Artisanal weekly food menu</h2>
+            <a href="#" class="btn">DISCOVER THE MENU</a>
+        </div>
+        <div id="artisanal-weekly-slider" class="menu-slider swiper">
+            <div class="swiper-wrapper">
+            <div class="menu-slider-item swiper-slide">
+                <img src="./img/artisanal-weekly/img1.jpg" alt="Menu Item 1">
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-slider-item swiper-slide">
+                <img src="./img/artisanal-weekly/img2.jpg" alt="Menu Item 2">
+                <p>Thai green coconut curry fish with rice noodles and vegetables</p>
+                <p>Chef's choice</p>
+            </div>
+            <div class="menu-slider-item swiper-slide">
+                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <p>Thai green coconut curry vegetables and rice noodles</p>
+                <p>Vegetarian, Vegan</p>
+            </div>
+            <div class="menu-slider-item swiper-slide">
+                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <p>Thai green coconut curry vegetables and rice noodles</p>
+                <p>Vegetarian, Vegan</p>
+            </div>
+            <div class="menu-slider-item swiper-slide">
+                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <p>Thai green coconut curry vegetables and rice noodles</p>
+                <p>Vegetarian, Vegan</p>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination artisanal-weekly-pagination"></div>
+    </div>
+</section>
+    <div id="lifestyle-block"></div>
+    <div id="delicious"></div>
+<section class="authentic">
+    <div class="bg">
+        <img src="./img/authentic/bg.svg" alt="background">
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2>Authentic cuisines of the World</h2>
+            <p>Our native chefs bring <br> the world’s best tastes <br> to your table
+                <span class="decor">
+                    <img src="./img/authentic/ld.svg" alt="Authentic Cuisines">
+                </span>
+            </p>
+        </div>
+        <div class="content">
+            <div id="authentic-slider" class="images-slider">
+                <div class="swiper-wrapper">
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img1.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Benoit Thorey Founder & executive chef</p>
+                            <span>Mediterranean cuisine</span>
+                        </div>
+                        <div class="decor">
+                            <img src="./img/authentic/decor.svg" alt="Benoit Thorey Founder">
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img2.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Danny</p>
+                            <span>Italian cuisine</span>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img3.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Juliette</p>
+                            <span>Italian cuisine</span>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img4.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Tony</p>
+                            <span>Lebanese cuisine</span>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img5.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Mme kim</p>
+                            <span>Korean cuisine</span>
+                        </div>
+                    </div>
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-img">
+                            <img src="./img/authentic/img6.png" alt="Authentic Cuisine">
+                        </div>
+                        <div class="slider-title">
+                            <p>Edwin</p>
+                            <span>Indian cuisine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</section>
+<section class="featured">
+    <div class="container">
+        <h2>Allcook Kitchen is featured in</h2>
+        <div id="featured-logo-slider" class="featured-logos">
+            <div class="swiper-wrapper">
+                <div class="featured-logos-item swiper-slide">
+                    <div class="featured-logos-img">
+                        <img src="./img/featured/logo1.svg" alt="Featured">
+                    </div>
+                    <div class="featured-logos-content">
+                        <strong>PME</strong>
+                        <p>Healthy Meals Delivered</p>
+                    </div>
+                </div>
+                <div class="featured-logos-item swiper-slide">
+                    <div class="featured-logos-img">
+                        <img src="./img/featured/logo1.svg" alt="Featured">
+                    </div>
+                    <div class="featured-logos-content">
+                        <strong>PME</strong>
+                        <p>Healthy Meals Delivered</p>
+                    </div>
+                </div>
+                <div class="featured-logos-item swiper-slide">
+                    <div class="featured-logos-img">
+                        <img src="./img/featured/logo1.svg" alt="Featured">
+                    </div>
+                    <div class="featured-logos-content">
+                        <strong>PME</strong>
+                        <p>Healthy Meals Delivered</p>
+                    </div>
+                </div>
+                <div class="featured-logos-item swiper-slide">
+                    <div class="featured-logos-img">
+                        <img src="./img/featured/logo1.svg" alt="Featured">
+                    </div>
+                    <div class="featured-logos-content">
+                        <strong>PME</strong>
+                        <p>Healthy Meals Delivered</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-logo-pagination"></div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <h2>What our customers are saying</h2>
+        <div class="content">
+        <div id="reviews-slider-main" class="reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="reviews-item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <div class="footer-slide">
+                        <div class="author">
+                            <strong>- Sarah J.</strong>
+                            <span>★★★★★</span>
+                        </div>
+                        <div class="logo g">
+                            logo
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <div class="footer-slide">
+                        <div class="author">
+                            <strong>- Sarah J.</strong>
+                            <span>★★★★★</span>
+                        </div>
+                        <div class="logo g">
+                            logo
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <div class="footer-slide">
+                        <div class="author">
+                            <strong>- Sarah J.</strong>
+                            <span>★★★★★</span>
+                        </div>
+                        <div class="logo g">
+                            logo
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-item swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut cupiditate praesentium ea eligendi, laudantium esse nihil officia illo rerum odit quam a?</p>
+                    <div class="footer-slide">
+                        <div class="author">
+                            <strong>- Sarah J.</strong>
+                            <span>★★★★★</span>
+                        </div>
+                        <div class="logo g">
+                            logo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-swiper-button-prev swiper-button-prev"></div>
+        <div class="reviews-swiper-button-next swiper-button-next"></div>
+        <div class="reviews-swiper-pagination swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+    <div id="footer"></div>
 <script>
   async function loadHTML(id, file) {
     const res = await fetch(file);
@@ -27,6 +263,11 @@
 
   loadHTML("header", "blocks/header/header.html");
   loadHTML("hero", "blocks/hero/hero.html");
+  loadHTML("lifestyle-block", "blocks/lifestyle-block/lifestyle-block.html");
+  loadHTML("delicious", "blocks/delicious/delicious.html");
   loadHTML("footer", "blocks/footer/footer.html");
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
 </html>

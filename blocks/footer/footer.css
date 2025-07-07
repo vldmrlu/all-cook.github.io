@@ -1,3 +1,5 @@
+/* Section: footer-block
+ * ========================================================================== */
 .footer {
   padding: 70px 0;
   background: var(--bg-green);
@@ -120,3 +122,6 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+/* Section: footer-block
+ * ========================================================================== */

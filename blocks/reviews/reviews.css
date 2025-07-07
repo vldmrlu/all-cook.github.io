@@ -1,0 +1,118 @@
+/* Section: reviews-block
+ * ========================================================================== */
+.reviews {
+  padding: 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .reviews {
+    padding: 100px 0 60px 0;
+  }
+}
+.reviews .container .content {
+  position: relative;
+  padding: 0 60px;
+}
+@media screen and (min-width: 768px) {
+  .reviews .container .content {
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .reviews .container {
+    max-width: 1100px;
+  }
+}
+.reviews h2 {
+  max-width: 670px;
+  margin-bottom: 40px;
+}
+.reviews .reviews-slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .reviews .reviews-slider {
+    max-width: 1100px;
+  }
+}
+.reviews .reviews-slider .swiper-wrapper {
+  display: flex;
+}
+.reviews .reviews-slider .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.reviews .reviews-slider .footer-slide {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.reviews .reviews-slider .footer-slide .author {
+  display: flex;
+  flex-direction: column;
+}
+.reviews .reviews-slider .footer-slide .author span {
+  margin-top: 10px;
+  color: #FF9900;
+}
+.reviews .swiper-button-prev {
+  left: 0px;
+  display: none;
+}
+.reviews .swiper-button-prev::after {
+  font-size: 60px;
+  color: var(--color-text);
+}
+@media screen and (min-width: 768px) {
+  .reviews .swiper-button-prev {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .reviews .swiper-button-prev {
+    left: -60px;
+  }
+}
+.reviews .swiper-button-next {
+  right: 0px;
+  display: none;
+}
+.reviews .swiper-button-next::after {
+  font-size: 60px;
+  color: var(--color-text);
+}
+@media screen and (min-width: 768px) {
+  .reviews .swiper-button-next {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .reviews .swiper-button-next {
+    right: -60px;
+  }
+}
+.reviews .reviews-swiper-pagination {
+  display: flex;
+  position: relative !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .reviews .reviews-swiper-pagination {
+    margin: 0;
+    display: none;
+    bottom: -40px;
+  }
+}
+.reviews .reviews-swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--color-text);
+}
+
+/* Section: reviews-block
+ * ========================================================================== */

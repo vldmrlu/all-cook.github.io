@@ -15,3 +15,164 @@ document.addEventListener('click', function(event) {
         html.classList.toggle('active');
     }
 });
+
+// slider for artisanal weekly
+const artisanalSlider = document.querySelector('#artisanal-weekly-slider');
+if (!artisanalSlider) {
+    console.error('Swiper element not found');
+}
+const swiper = new Swiper(artisanalSlider, {
+    slidesPerView: 1.5,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.artisanal-weekly-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1570: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+// artisanal weekly
+
+// slider for authentic 
+const authenticSlider = document.querySelector('#authentic-slider');
+if (!authenticSlider) {
+    console.error('Swiper element not found');
+}
+
+let authenticSwiper = null;
+
+const updateSliderItemsClass = (add) => {
+    const items = authenticSlider.querySelectorAll('.slider-item');
+    items.forEach(item => {
+        if (add) {
+            item.classList.add('swiper-slide');
+        } else {
+            item.classList.remove('swiper-slide');
+        }
+    });
+};
+
+const resizeObserver = new ResizeObserver(() => {
+    if (window.innerWidth <= 1100) {
+        updateSliderItemsClass(true);
+        if (!authenticSwiper) {
+            authenticSwiper = new Swiper(authenticSlider, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: '#authentic-slider .swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+        }
+    } else {
+        if (authenticSwiper) {
+            authenticSwiper.destroy();
+            authenticSwiper = null;
+        }
+        updateSliderItemsClass(false);
+    }
+});
+resizeObserver.observe(authenticSlider);
+
+// slider for authentic
+
+// slider for featured
+const featuredSlider = document.querySelector('#featured-logo-slider');
+if (!featuredSlider) {
+    console.error('Swiper element not found');
+}
+
+let featuredSwiper = null;
+
+const UpdateFeaturedItemsClass = (add) => {
+    const items = featuredSlider.querySelectorAll('.slider-item');
+    items.forEach(item => {
+        if (add) {
+            item.classList.add('swiper-slide');
+        } else {
+            item.classList.remove('swiper-slide');
+        }
+    });
+};
+
+const resizeFeaturedObserver = new ResizeObserver(() => {
+    if (window.innerWidth <= 992) {
+        UpdateFeaturedItemsClass(true);
+        if (!featuredSwiper) {
+            featuredSwiper = new Swiper(featuredSlider, {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: '.featured-logo-pagination',
+                    clickable: true,
+                },
+            });
+        }
+    } else {
+        if (featuredSwiper) {
+            featuredSwiper.destroy();
+            featuredSwiper = null;
+        }
+        UpdateFeaturedItemsClass(false);
+    }
+});
+resizeFeaturedObserver.observe(featuredSlider);
+
+// slider for authentic
+
+// slider for reviews
+const reviewsSlider = document.querySelector('#reviews-slider-main');
+if (!reviewsSlider) {
+    console.error('Swiper element not found');
+}
+
+const reviews = new Swiper(reviewsSlider, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+        nextEl: '.reviews-swiper-button-next',
+        prevEl: '.reviews-swiper-button-prev',
+    },
+    pagination: {
+        el: '.reviews-swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        920: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});

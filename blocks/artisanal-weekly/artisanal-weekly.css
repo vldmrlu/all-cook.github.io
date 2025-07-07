@@ -1,0 +1,95 @@
+/* Section: Artisanal Weekly
+ * ========================================================================== */
+.artisanal-weekly {
+  padding: 30px 0;
+}
+.artisanal-weekly .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .artisanal-weekly .container {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .artisanal-weekly .container {
+    padding-left: 110px;
+  }
+}
+.artisanal-weekly .title {
+  flex: 0 0 100%;
+}
+@media screen and (min-width: 992px) {
+  .artisanal-weekly .title {
+    flex: 0 0 382px;
+  }
+}
+.artisanal-weekly .title h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1100px) {
+  .artisanal-weekly .title h2 {
+    font-size: 80px;
+  }
+}
+.artisanal-weekly .menu-slider {
+  flex: 0 0 100%;
+  padding: 0;
+  margin: 40px 0;
+}
+@media screen and (min-width: 992px) {
+  .artisanal-weekly .menu-slider {
+    flex: 0 0 calc(100% - 380px);
+    margin: 0;
+  }
+}
+.artisanal-weekly .menu-slider .swiper-wrapper {
+  display: flex;
+}
+.artisanal-weekly .menu-slider .menu-slider-item img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.artisanal-weekly .swiper-button-next {
+  position: absolute;
+  display: none;
+}
+.artisanal-weekly .swiper-button-next:after {
+  color: var(--color-text);
+}
+@media screen and (min-width: 992px) {
+  .artisanal-weekly .swiper-button-next {
+    display: block;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .artisanal-weekly .swiper-button-next {
+    right: -10px !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .artisanal-weekly .swiper-button-next {
+    right: -30px !important;
+  }
+}
+.artisanal-weekly .swiper-pagination {
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .artisanal-weekly .swiper-pagination {
+    display: none;
+  }
+}
+.artisanal-weekly .swiper-pagination-bullet-active {
+  background: var(--color-text);
+}
+
+/* Section: Artisanal Weekly
+ * ========================================================================== */
