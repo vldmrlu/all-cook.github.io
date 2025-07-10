@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="public/css/app.css">
+    <title>Blocks</title>
+</head>
+<body>
+        <div id="header"></div>
+        <div id="program-section"></div>
+        <div id="how-it-work"></div>
+        <div id="picture-video-section"></div>
+        <div id="picture-video"></div>
+        <div id="menu-page"></div>
+        <div id="blog-page"></div>
+        <div id="recipes"></div>
+<div class="accordion">
+    <div class="container">
+        <div class="title">
+            <h2>Popular Questions</h2>
+            <div class="decor">
+                <img src="./img/accordion/decor.png" alt="Decorative Image">
+            </div>
+        </div>
+        <div class="acc-block">
+            <div class="acc-item">
+                <div class="title">Who cooks your meals?
+                    <div class="arrow">
+                        <img src="./img/accordion/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p>Our meals are prepared by a team of professional chefs who specialize in creating healthy and delicious dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="title">Who cooks your meals?
+                    <div class="arrow">
+                        <img src="./img/accordion/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p>Our meals are prepared by a team of professional chefs who specialize in creating healthy and delicious dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="title">Who cooks your meals?
+                    <div class="arrow">
+                        <img src="./img/accordion/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p>Our meals are prepared by a team of professional chefs who specialize in creating healthy and delicious dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="title">Who cooks your meals?
+                    <div class="arrow">
+                        <img src="./img/accordion/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p>Our meals are prepared by a team of professional chefs who specialize in creating healthy and delicious dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="title">Who cooks your meals?
+                    <div class="arrow">
+                        <img src="./img/accordion/arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <p>Our meals are prepared by a team of professional chefs who specialize in creating healthy and delicious dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">MORE FAQ</a>
+        </div>
+    </div>
+</div>
+<div id="common-question"></div>
+        <div id="footer"></div>
+<script>
+  async function loadHTML(id, file) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+  }
+
+  loadHTML("header", "blocks/header/header.html");
+  loadHTML("program-section", "blocks/program-section/program-section.html");
+  loadHTML("how-it-work", "blocks/how-it-work/how-it-work.html");
+  loadHTML("footer", "blocks/footer/footer.html");
+  loadHTML("picture-video-section", "blocks/picture-video-section/picture-video-section.html");
+  loadHTML("picture-video", "blocks/picture-video/picture-video.html");
+  loadHTML("menu-page", "blocks/menu-page/menu-page.html");
+  loadHTML("blog-page", "blocks/blog-page/blog-page.html");
+  loadHTML("recipes", "blocks/recipes/recipes.html");
+  loadHTML("common-question", "blocks/common-question/common-question.html");
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

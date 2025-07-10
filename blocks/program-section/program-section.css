@@ -1,0 +1,57 @@
+/* Section: program-section
+ * ========================================================================== */
+.program-section {
+  padding: 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .program-section {
+    padding: 100px 0;
+  }
+}
+.program-section .container {
+  max-width: 1235px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+@media screen and (min-width: 992px) {
+  .program-section .container {
+    flex-wrap: nowrap;
+  }
+}
+.program-section .container .content {
+  flex: 0 0 100%;
+}
+.program-section .container .content h1 {
+  margin-bottom: 20px;
+}
+.program-section .container .content p {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program-section .container .content {
+    flex: 0 0 40%;
+  }
+}
+.program-section .container .img {
+  flex: 1;
+  position: relative;
+}
+.program-section .container .img img {
+  width: 100%;
+}
+.program-section .container .img .decor {
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .program-section .container .img .decor {
+    display: flex;
+    top: 100px;
+    right: -100px;
+  }
+}
+
+/* Section: program-section
+ * ========================================================================== */

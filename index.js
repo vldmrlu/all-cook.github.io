@@ -17,92 +17,87 @@ document.addEventListener('click', function(event) {
 });
 
 // slider for artisanal weekly
+
 const artisanalSlider = document.querySelector('#artisanal-weekly-slider');
-if (!artisanalSlider) {
-    console.error('Swiper element not found');
+if (artisanalSlider) {
+    const artisanalSwiper = new Swiper(artisanalSlider, {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.artisanal-weekly-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1570: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
 }
-const swiper = new Swiper(artisanalSlider, {
-    slidesPerView: 1.5,
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.artisanal-weekly-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1570: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    },
-});
 
 // artisanal weekly
 
 // slider for authentic 
 const authenticSlider = document.querySelector('#authentic-slider');
-if (!authenticSlider) {
-    console.error('Swiper element not found');
-}
+if (authenticSlider) {
+    let authenticSwiper = null;
 
-let authenticSwiper = null;
-
-const updateSliderItemsClass = (add) => {
+    const updateSliderItemsClass = (add) => {
     const items = authenticSlider.querySelectorAll('.slider-item');
     items.forEach(item => {
-        if (add) {
-            item.classList.add('swiper-slide');
+            if (add) {
+                item.classList.add('swiper-slide');
+            } else {
+                item.classList.remove('swiper-slide');
+            }
+        });
+    };
+
+    const resizeObserver = new ResizeObserver(() => {
+        if (window.innerWidth <= 1100) {
+            updateSliderItemsClass(true);
+            if (!authenticSwiper) {
+                authenticSwiper = new Swiper(authenticSlider, {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: '#authentic-slider .swiper-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                        },
+                    },
+                });
+            }
         } else {
-            item.classList.remove('swiper-slide');
+            if (authenticSwiper) {
+                authenticSwiper.destroy();
+                authenticSwiper = null;
+            }
+            updateSliderItemsClass(false);
         }
     });
-};
-
-const resizeObserver = new ResizeObserver(() => {
-    if (window.innerWidth <= 1100) {
-        updateSliderItemsClass(true);
-        if (!authenticSwiper) {
-            authenticSwiper = new Swiper(authenticSlider, {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                loop: true,
-                pagination: {
-                    el: '#authentic-slider .swiper-pagination',
-                    clickable: true,
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                    },
-                },
-            });
-        }
-    } else {
-        if (authenticSwiper) {
-            authenticSwiper.destroy();
-            authenticSwiper = null;
-        }
-        updateSliderItemsClass(false);
-    }
-});
-resizeObserver.observe(authenticSlider);
+    resizeObserver.observe(authenticSlider);
+}
 
 // slider for authentic
 
 // slider for featured
 const featuredSlider = document.querySelector('#featured-logo-slider');
-if (!featuredSlider) {
-    console.error('Swiper element not found');
-}
-
+if (featuredSlider) {
 let featuredSwiper = null;
 
 const UpdateFeaturedItemsClass = (add) => {
@@ -140,15 +135,13 @@ const resizeFeaturedObserver = new ResizeObserver(() => {
 });
 resizeFeaturedObserver.observe(featuredSlider);
 
+}
 // slider for authentic
 
 // slider for reviews
 const reviewsSlider = document.querySelector('#reviews-slider-main');
-if (!reviewsSlider) {
-    console.error('Swiper element not found');
-}
-
-const reviews = new Swiper(reviewsSlider, {
+if (reviewsSlider) {
+    const reviews = new Swiper(reviewsSlider, {
     slidesPerView: 1,
     spaceBetween: 10,
 
@@ -176,3 +169,37 @@ const reviews = new Swiper(reviewsSlider, {
         },
     },
 });
+}
+
+// slider for reviews
+
+// accordion functionality
+
+const accordionItems = document.querySelectorAll('.acc-item');
+if (accordionItems.length > 0) {
+
+const toggleAccordionItem = (item) => {
+    const content = item.querySelector('.content');
+    const isActive = item.classList.contains('active');
+    const allItems = document.querySelectorAll('.acc-item');
+
+    allItems.forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.content').style.height = '0px';
+        i.querySelector('.arrow img').src = './img/accordion/arrow.svg'; // reset arrow
+    });
+    if (!isActive) {
+        item.classList.add('active');
+        content.style.height = content.scrollHeight + 'px'; // set height to scrollHeight
+    }
+};
+accordionItems.forEach(item => {
+    item.addEventListener('click', () => {
+        toggleAccordionItem(item);
+    });
+});
+
+}
+// height animation function on click
+
+// accordion functionality

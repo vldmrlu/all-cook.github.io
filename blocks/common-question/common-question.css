@@ -1,0 +1,109 @@
+/* Section: common-question
+ * ========================================================================== */
+.common-question {
+  padding: 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .common-question {
+    padding: 80px 0;
+  }
+}
+.common-question .container {
+  max-width: 935px;
+}
+.common-question .container .title {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .common-question .container .title {
+    flex-wrap: nowrap;
+  }
+}
+.common-question .container .title h2 {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .common-question .container .title h2 {
+    flex: 0 0 62%;
+  }
+}
+.common-question .container .title p {
+  flex: 0 0 100%;
+  margin: 20px 0;
+}
+@media screen and (min-width: 992px) {
+  .common-question .container .title p {
+    flex: 0 0 42%;
+  }
+}
+.common-question .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .common-question .container .row {
+    gap: 20px;
+    margin-top: 100px;
+  }
+}
+.common-question .container .row a {
+  flex: 0 0 calc((100% - 10px) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: var(--color-text);
+}
+@media screen and (min-width: 480px) {
+  .common-question .container .row a {
+    flex: 0 0 calc((100% - 15px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .common-question .container .row a {
+    flex: 0 0 calc((100% - 60px) / 4);
+    margin-bottom: 0;
+  }
+}
+.common-question .container .row a .col-img {
+  height: 50px;
+  width: 50px;
+}
+@media screen and (min-width: 768px) {
+  .common-question .container .row a .col-img {
+    height: 120px;
+    width: 120px;
+  }
+}
+.common-question .container .row a .col-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.common-question .container .row a p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .common-question .container .row a p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .common-question .container .row a p {
+    font-size: 22px;
+  }
+}
+
+/* Section: common-question
+ * ========================================================================== */

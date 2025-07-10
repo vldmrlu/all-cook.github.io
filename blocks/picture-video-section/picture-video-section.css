@@ -1,0 +1,61 @@
+/* Section: picture-video-section
+ * ========================================================================== */
+.picture-video-section {
+  padding: 30px 0;
+}
+@media screen and (min-width: 992px) {
+  .picture-video-section {
+    padding: 100px 0;
+  }
+}
+.picture-video-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .picture-video-section .row {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+}
+.picture-video-section .row .image {
+  position: relative;
+  flex: 0 0 100%;
+}
+@media screen and (min-width: 992px) {
+  .picture-video-section .row .image {
+    flex: 0 0 50%;
+  }
+}
+.picture-video-section .row .image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.picture-video-section .row .image .decor {
+  position: absolute;
+  bottom: 30px;
+  right: -80px;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .picture-video-section .row .image .decor {
+    display: flex;
+  }
+}
+.picture-video-section .row .content {
+  flex: 0 0 100%;
+}
+@media screen and (min-width: 992px) {
+  .picture-video-section .row .content {
+    flex: 0 0 44%;
+  }
+}
+.picture-video-section .row .content h2 {
+  margin-bottom: 20px;
+}
+
+/* Section: picture-video-section
+ * ========================================================================== */

@@ -89,12 +89,13 @@ header .container .lang {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 20px;
+  margin-left: 0;
   font-size: 14px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
   header .container .lang {
     font-size: 16px;
+    margin-left: 20px;
   }
 }
 header .container .lang select {

@@ -2,6 +2,7 @@
  * ========================================================================== */
 .reviews {
   padding: 30px 0;
+  background: #E8EDE6;
 }
 @media screen and (min-width: 992px) {
   .reviews {
@@ -23,8 +24,14 @@
   }
 }
 .reviews h2 {
-  max-width: 670px;
+  max-width: 740px;
   margin-bottom: 40px;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .reviews h2 {
+    padding: 0 60px;
+  }
 }
 .reviews .reviews-slider {
   position: relative;
@@ -59,6 +66,16 @@
 .reviews .reviews-slider .footer-slide .author span {
   margin-top: 10px;
   color: #FF9900;
+}
+.reviews .reviews-slider .footer-slide .logo {
+  width: 20px;
+  height: 20px;
+}
+.reviews .reviews-slider .footer-slide .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .reviews .swiper-button-prev {
   left: 0px;
