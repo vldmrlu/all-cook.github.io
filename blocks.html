@@ -14,20 +14,539 @@
     <title>Blocks</title>
 </head>
 <body>
-        <div id="header"></div>
-        <div id="program-section"></div>
-        <div id="how-it-work"></div>
-        <div id="picture-video-section"></div>
-        <div id="picture-video"></div>
-        <div id="menu-page"></div>
-        <div id="blog-page"></div>
-        <div id="recipes"></div>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <img src="./img/header/logo.svg" alt="All Cook" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="active" href="/">MENU</a></li>
+                    <li><a href="/recipes">HOW IT WORKS</a></li>
+                    <li><a href="/about">PROGRAMS</a></li>
+                    <li><a href="/contact">BUSINESS CATERING</a></li>
+                    <li><a href="/blog">GIFT CARDS</a></li>
+                    <li><a href="/blog">LOGIN</a></li>
+                </ul>
+                <div class="lang">
+                    <select name="language" id="language">
+                        <option value="/lang/en">EN</option>
+                        <option value="/lang/es">ES</option>
+                        <option value="/lang/fr">FR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="program-section">
+    <div class="container">
+        <div class="content">
+            <h1>Low carb meals</h1>
+            <p>
+                Get fit & enjoy food <br>
+                designed by the nutritionist and chefs
+            </p>
+            <a href="#" class="btn">ORDER NOW</a>
+        </div>
+        <div class="img">
+            <img src="./public/img/program-section/img.webp" alt="Low carb meals">
+            <div class="decor">
+                <img src="./img/program-section/decor.svg" alt="Decoration">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="how-it-work">
+    <div class="container">
+        <h2>HOW IT WORKs</h2>
+        <div class="row">
+            <div class="col">
+                <div class="col-icon">
+                    <img src="./img/how-it-work/img1.svg" alt="STEP 1">
+                </div>
+                <div class="col-content">
+                    <strong>STEP 1</strong>
+                    <p>CHOOSE YOUR MEALS</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-icon">
+                    <img src="./img/how-it-work/img2.svg" alt="STEP 2">
+                </div>
+                <div class="col-content">
+                    <strong>STEP 2</strong>
+                    <p>OUR CHEFS COOK</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-icon">
+                    <img src="./img/how-it-work/img3.svg" alt="STEP 3">
+                </div>
+                <div class="col-content">
+                    <strong>STEP 3</strong>
+                    <p>We deliver Swisswide</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-icon">
+                    <img src="./img/how-it-work/img4.svg" alt="STEP 4">
+                </div>
+                <div class="col-content">
+                    <strong>STEP 4</strong>
+                    <p>Ready in minutes</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#" class="btn">GET STARTED</a>
+        </div>
+    </div>
+</div>
+<section class="picture-video-section">
+    <div class="container">
+        <div class="row">
+            <div class="image">
+                <img src="./public/img/picture-video-section/pic.webp" alt="Healthy Meals">
+                <strong>Aurélia Corbaz</strong>
+                <p>
+                    Allcook’s micro nutritionist partner
+                </p>
+                <div class="decor">
+                    <img src="./img/picture-video-section/decor.svg" alt="Decorative Image">
+                </div>
+            </div>
+            <div class="content">
+                <h2>How does LOW CARB diet work for weight loss?</h2>
+                <ul>
+                    <li>25-30% of daily energy should come from carbohydrates, 2 times less than the recommended standard diet.</li>
+                    <li>Our bodies metabolise carbohydrates for energy and save the excess of it in the form of fat.</li>
+                    <li>Reducing the consumption of carbs makes your body consume energy from the stored fat.</li>
+                    <li>The rule is to consume nutrient-rich carbohydrates, such as vegetables and pulses, which our body takes longer to metabolise.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="picture-video">
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <h2>Options for every lifestyle and dietary restrictions</h2>
+                <p>Recipes vetted by <br> our nutritionist</p>
+                <a href="#" class="btn">ORDER NOW</a>
+            </div>
+            <div class="image">
+                <img src="./public/img/picture-video/pic.webp" alt="Healthy Meals">
+                <p>Customise your box by adding delicious <br> proteins, sides, soups and drinks</p>
+                <div class="decor">
+                    <img src="./public/img/picture-video/decor.webp" alt="Decorative Image">
+                </div>
+            </div>
+        </div>
+        <div class="featured-list">
+            <div class="featured-item">
+                <h5 class="title">Chef's choice</h5>
+                <div class="img">
+                    <img src="./public/img/picture-video/img2.webp" alt="Chef's choice">
+                </div>
+                <div class="featured-item-footer">
+                    <p>Every week, our chefs craft a Market Dish inspired by the freshest seasonal ingredients, diverse textures, and premium cuts of meat, fish, or poultry.</p>
+                    <a href="#" class="btn">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <h5 class="title">LOW CARBS KETO</h5>
+                <div class="img">
+                    <img src="./public/img/picture-video/img2.webp" alt="LOW CARBS KETO">
+                </div>
+                <div class="featured-item-footer">
+                <p>Build your perfect keto experience, High in nutrients and incredibly tasty</p>
+                    <a href="#" class="btn">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <h5 class="title">Vegetarian & Vegan</h5>
+                <div class="img">
+                    <img src="./public/img/picture-video/img3.webp" alt="Vegetarian & Vegan">
+                </div>
+                <div class="featured-item-footer">
+                    <p>Plant-based meals which tastes like no other</p>
+                    <a href="#" class="btn">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <h5 class="title">intermittent fasting</h5>
+                <div class="img">
+                    <img src="./public/img/picture-video/img4.webp" alt="intermittent fasting">
+                </div>
+                <div class="featured-item-footer">
+                    <p>Tailored meals to succeed intermittent fasting</p>
+                    <a href="#" class="btn">ORDER NOW</a>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="menu-page">
+    <div class="container">
+        <div class="menu-page-header">
+            <h2>Artisanal weekly <br> food menu</h2>
+            <p>Deliveries on Tuesdays, Wednesdays or Thursdays</p>
+            <div class="img">
+                <img src="./public/img/menu-page/img1.webp" alt="Menu Header Image">
+            </div>
+        </div>
+        <ul class="tab-list">
+            <li class="active"><a href="#">31 Mar</a></li>
+            <li><a href="#">07 Apr</a></li>
+            <li><a href="#">14 Apr</a></li>
+            <li><a href="#">21 Apr</a></li>
+        </ul>
+        <div class="menu-row">
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+            <div class="menu-item">
+                <div class="img">
+                    <img src="./public/img/menu-page/img2.webp" alt="Menu Item Image">
+                </div>
+                <p>Lemon ravioli</p>
+                <p>Chef's choice, Vegetarian</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-page">
+    <div class="container">
+        <div class="blog-page-header">
+            <div class="title">
+                <h2>Taste and Nutrition</h2>
+                <div class="tags">
+                    <a href="#">RECIPES</a>
+                    <a href="#">NUTRITION</a>
+                    <a href="#">SUSTAINABILITY</a>
+                </div>
+            </div>
+            <div class="images">
+                <div class="first">
+                    <img src="./public/img/blog-page/img3.webp" alt="Blog Header Image">
+                </div>
+                <div class="second">
+                    <img src="./public/img/blog-page/img2.webp" alt="Blog Header Image">
+                </div>
+            </div>
+            <div class="tags mobile">
+                <a href="#">RECIPES</a>
+                <a href="#">NUTRITION</a>
+                <a href="#">SUSTAINABILITY</a>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recipes">
+    <div class="container">
+        <div class="recipes-header">
+            <div class="img">
+                <img src="./public/img/recipes/img1.webp" alt="Recipes Header Image">
+                <div class="decor">
+                    <img src="./public/img/recipes/decor.webp" alt="Decorative Image">
+                </div>
+            </div>
+            <div class="title">
+                <h1>Recipes</h1>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+            <div class="news-item">
+                <div class="img">
+                    <img src="./public/img/blog-page/img1.webp" alt="News Image">
+                </div>
+                <p>Healthy eating, pleasure and portions: a balance to aim for</p>
+                <div class="date">
+                    <strong>Nutrition</strong>
+                    <data value="2025-02-07">2025-02-07</data>
+                </div>
+                <p>When it comes to nutrition, it can be complex to combine health, pleasure and portion control. However, all three are...</p>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="accordion">
     <div class="container">
         <div class="title">
             <h2>Popular Questions</h2>
             <div class="decor">
-                <img src="./img/accordion/decor.png" alt="Decorative Image">
+                <img src="./public/img/accordion/decor.webp" alt="Decorative Image">
             </div>
         </div>
         <div class="acc-block">
@@ -95,26 +614,113 @@
         </div>
     </div>
 </div>
-<div id="common-question"></div>
-        <div id="footer"></div>
-<script>
-  async function loadHTML(id, file) {
-    const res = await fetch(file);
-    const html = await res.text();
-    document.getElementById(id).innerHTML = html;
-  }
+<section class="common-question">
+    <div class="container">
+        <div class="title">
+            <h2>Common Questions</h2>
+            <p>You can adjust your meals and servings, as well as skip meals anytime.</p>
+        </div>
+        <div class="row">
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img3.svg" alt="image">
+                </div>
+                <p>ABOUT US</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img4.svg" alt="image">
+                </div>
+                <p>MY ACCOUNT</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img1.svg" alt="image">
+                </div>
+                <p>Ingredients</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img6.svg" alt="image">
+                </div>
+                <p>MEALS</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img8.svg" alt="image">
+                </div>
+                <p>DELIVERY</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img5.svg" alt="image">
+                </div>
+                <p>SUSTAINABILITY</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img7.svg" alt="image">
+                </div>
+                <p>PAYMENTS</p>
+            </a>
+            <a href="#" class="col">
+                <div class="col-img">
+                    <img src="./img/common-question/img2.svg" alt="image">
+                </div>
+                <p>INVITE FRIENDS</p>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-about">
+            <p>
+                Allcook Kitchen is a Switzerland’s first artisanal meals delivery service that makes it easy to eat healthy food with pleasure. We deliver meals weekly without obligation. Our chef-cooked meals are affordable and made delicious from responsibly sourced ingredients and vacuum packed to naturally lock in the flavours and nutrients. So delicious and fresh as if chef just cooked at your kitchen!
+            </p>
+        </div>
+        <nav class="footer-menu">
+            <ul>
+                <li><a href="/index.html">Menu</a></li>
+                <li><a href="/quality.html">Our quality</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/privacy.html">Privacy policy</a></li>
+                <li><a href="/terms.html">Terms of Service</a></li>
+                <li><a href="/press.html">For press</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
+                <li><a href="/media.html">Media about us</a></li>
+                <li><a href="/follow.html">Follow us</a></li>
+            </ul>
 
-  loadHTML("header", "blocks/header/header.html");
-  loadHTML("program-section", "blocks/program-section/program-section.html");
-  loadHTML("how-it-work", "blocks/how-it-work/how-it-work.html");
-  loadHTML("footer", "blocks/footer/footer.html");
-  loadHTML("picture-video-section", "blocks/picture-video-section/picture-video-section.html");
-  loadHTML("picture-video", "blocks/picture-video/picture-video.html");
-  loadHTML("menu-page", "blocks/menu-page/menu-page.html");
-  loadHTML("blog-page", "blocks/blog-page/blog-page.html");
-  loadHTML("recipes", "blocks/recipes/recipes.html");
-  loadHTML("common-question", "blocks/common-question/common-question.html");
-</script>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/allcook">
+                    <img src="./img/footer/facebook-logo.svg" alt="Facebook" class="social-icon">
+                </a></li>
+                <li><a href="https://www.instagram.com/allcook">
+                    <img src="./img/footer/insta-logo.svg" alt="Instagram" class="social-icon">
+                </a></li>
+                <li><a href="https://www.linkedin.com/allcook">
+                    <img src="./img/footer/linkedin-logo.svg" alt="linkedin" class="social-icon">
+                </a></li>
+            </ul>
+
+            <div class="footer-logo mobile">
+                <img src="./img/footer/logo-footer.svg" alt="Allcook SA">
+            </div>
+        </nav>
+        <div class="footer-copyright">
+            <p>
+                Allcook SA
+                Avenue de Rumine 13, CH-1005, Lausanne <br>
+                <a href="mailto:service@allcook.kitchen">service@allcook.kitchen</a> <br>
+                <a href="tel:+41213119344" class="phone">+41 21 311 93 44</a> <br>
+            </p>
+            <div class="footer-logo">
+                <img src="./img/footer/logo-footer.svg" alt="Allcook SA">
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>

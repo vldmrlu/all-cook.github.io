@@ -14,10 +14,88 @@
     <title>All Cook</title>
 </head>
 <body>
-    <div id="header"></div>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <img src="./img/header/logo.svg" alt="All Cook" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="active" href="/">MENU</a></li>
+                    <li><a href="/recipes">HOW IT WORKS</a></li>
+                    <li><a href="/about">PROGRAMS</a></li>
+                    <li><a href="/contact">BUSINESS CATERING</a></li>
+                    <li><a href="/blog">GIFT CARDS</a></li>
+                    <li><a href="/blog">LOGIN</a></li>
+                </ul>
+                <div class="lang">
+                    <select name="language" id="language">
+                        <option value="/lang/en">EN</option>
+                        <option value="/lang/es">ES</option>
+                        <option value="/lang/fr">FR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </div>
+    </nav>
+</header>
     <div id="main-content">
-    <div id="hero"></div>
-
+<section class="hero">
+    <!--- top banner
+    <div class="top-banner">
+            <p>SPECIAL OFFER ORDER NOW</p>
+            <a href="#">
+                <img src="./img/hero/banner-btn.svg" alt="button icon">
+            </a>
+    </div>
+    -->
+    <div class="container">
+        <div class="hero-intro">
+            <div class="hero-intro__img">
+                <img src="./public/img/hero/img2.webp" alt="Healthy food delivery service">
+            </div>
+            <div class="hero-intro__title">
+                <h1>Healthy food <br> delivery service</h1>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="subtitle">
+                Artisanal food Delivered to any address in Switzerland and Liechtenstein.
+            </div>
+        </div>
+        <div class="hero-images">
+            <div class="hero-images__text">
+                <div class="decor">
+                    <img src="./img/hero/decor.svg" alt="Decoration">
+                </div>
+                <h2>we cook <br> you thrive</h2>
+                <p>Discover our Freshly cooked <br> food crafted by culinary masters.</p>
+            </div>
+            <div class="hero-images__item">
+                <img src="./public/img/hero/img4.webp" alt="Healthy food delivery service">
+            </div>
+            <div class="hero-images__item">
+                <img src="./public/img/hero/img1.webp" alt="Healthy food delivery service">
+            </div>
+            <div class="hero-images__item">
+                <img src="./public/img/hero/img3.webp" alt="Healthy food delivery service">
+                <div class="decor">
+                    <img src="./img/hero/icon2.svg" alt="Decoration">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- bottom banner
+<div class="bottom-banner-hero">
+    <img src="./img/hero/bottom-banner.png" alt="google rate">
+</div>
+-->
 <section class="artisanal-weekly">
     <div class="container">
         <div class="title">
@@ -27,27 +105,27 @@
         <div id="artisanal-weekly-slider" class="menu-slider swiper">
             <div class="swiper-wrapper">
             <div class="menu-slider-item swiper-slide">
-                <img src="./img/artisanal-weekly/img1.jpg" alt="Menu Item 1">
+                <img src="./public/img/artisanal-weekly/img1.webp" alt="Menu Item 1">
                 <p>Lemon ravioli</p>
                 <p>Chef's choice, Vegetarian</p>
             </div>
             <div class="menu-slider-item swiper-slide">
-                <img src="./img/artisanal-weekly/img2.jpg" alt="Menu Item 2">
+                <img src="./public/img/artisanal-weekly/img2.webp" alt="Menu Item 2">
                 <p>Thai green coconut curry fish with rice noodles and vegetables</p>
                 <p>Chef's choice</p>
             </div>
             <div class="menu-slider-item swiper-slide">
-                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <img src="./public/img/artisanal-weekly/img3.webp" alt="Menu Item 3">
                 <p>Thai green coconut curry vegetables and rice noodles</p>
                 <p>Vegetarian, Vegan</p>
             </div>
             <div class="menu-slider-item swiper-slide">
-                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <img src="./public/img/artisanal-weekly/img3.webp" alt="Menu Item 3">
                 <p>Thai green coconut curry vegetables and rice noodles</p>
                 <p>Vegetarian, Vegan</p>
             </div>
             <div class="menu-slider-item swiper-slide">
-                <img src="./img/artisanal-weekly/img3.jpg" alt="Menu Item 3">
+                <img src="./public/img/artisanal-weekly/img3.webp" alt="Menu Item 3">
                 <p>Thai green coconut curry vegetables and rice noodles</p>
                 <p>Vegetarian, Vegan</p>
             </div>
@@ -57,8 +135,71 @@
         <div class="swiper-pagination artisanal-weekly-pagination"></div>
     </div>
 </section>
-    <div id="lifestyle-block"></div>
-    <div id="delicious"></div>
+<section class="lifestyle-block">
+    <div class="container">
+        <h2>Options for every lifestyle and dietary restrictions</h2>
+        <div class="content">
+            <div class="meal">
+                <img src="./public/img/lifestyle-block/img1.webp" alt="Meal">
+                <p>Recipes vetted by our nutritionist</p>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./public/img/lifestyle-block/img2.webp" alt="Lifestyle Image">
+                    <p>Customise your box by adding delicious proteins, sides, soups and drinks</p>
+                    <span>Chef's choice</span>
+                    <span>LOW CARBS KETO</span>
+                    <span>Vegetarian</span>
+                    <span>Vegan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="delicious">
+    <div class="container">
+        <h2>Delicious and perfectly cooked meals by our Expert chefs</h2>
+        <div class="content">
+            <div class="content-item item-1">
+                <div class="content-item__img">
+                    <img class="main-img" src="./public/img/delicious/img1.webp" alt="Delicious and perfectly cooked meals">
+                    <div class="decor">
+                        <img src="./public/img/delicious/dec4.webp" alt="decoration">
+                    </div>
+                </div>
+                <div class="content-item__text">
+                    <p>No shopping, no cooking, no cleaning - pure enjoyment, as if our chef just cooked it in your kitchen!</p>
+                </div>
+            </div>
+            <div class="content-item item-2">
+                <div class="content-item__text">
+                    <div class="decor">
+                        <img src="./img/delicious/dec1.svg" alt="decoration">
+                    </div>
+                    <p>Freshness and Authentic taste locked with compostable vacuum packaging</p>
+                </div>
+                <div class="content-item__img">
+                    <img class="main-img" src="./public/img/delicious/img3.webp" alt="Delicious and perfectly cooked meals">
+                </div>
+            </div>
+            <div class="content-item item-3">
+                <div class="content-item__img">
+                    <img class="main-img" src="./public/img/delicious/img2.webp" alt="Delicious and perfectly cooked meals">
+                    <div class="decor-top">
+                        <img src="./public/img/delicious/dec2.webp" alt="decoration">
+                    </div>
+                    <div class="decor-bottom">
+                        <img src="./public/img/delicious/dec3.webp" alt="decoration">
+                    </div>
+                </div>
+                <div class="content-item__text">
+                    <p>Warm-up vacuum sachets in minutes according to easy instructions.</p>
+                    <a href="#" class="btn">TRY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="authentic">
     <div class="bg">
         <img src="./img/authentic/bg.svg" alt="background">
@@ -253,20 +394,55 @@
         </div>
     </div>
 </section>
-    <div id="footer"></div>
-<script>
-  async function loadHTML(id, file) {
-    const res = await fetch(file);
-    const html = await res.text();
-    document.getElementById(id).innerHTML = html;
-  }
+<footer class="footer">
+    <div class="container">
+        <div class="footer-about">
+            <p>
+                Allcook Kitchen is a Switzerland’s first artisanal meals delivery service that makes it easy to eat healthy food with pleasure. We deliver meals weekly without obligation. Our chef-cooked meals are affordable and made delicious from responsibly sourced ingredients and vacuum packed to naturally lock in the flavours and nutrients. So delicious and fresh as if chef just cooked at your kitchen!
+            </p>
+        </div>
+        <nav class="footer-menu">
+            <ul>
+                <li><a href="/index.html">Menu</a></li>
+                <li><a href="/quality.html">Our quality</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/privacy.html">Privacy policy</a></li>
+                <li><a href="/terms.html">Terms of Service</a></li>
+                <li><a href="/press.html">For press</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
+                <li><a href="/media.html">Media about us</a></li>
+                <li><a href="/follow.html">Follow us</a></li>
+            </ul>
 
-  loadHTML("header", "blocks/header/header.html");
-  loadHTML("hero", "blocks/hero/hero.html");
-  loadHTML("lifestyle-block", "blocks/lifestyle-block/lifestyle-block.html");
-  loadHTML("delicious", "blocks/delicious/delicious.html");
-  loadHTML("footer", "blocks/footer/footer.html");
-</script>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/allcook">
+                    <img src="./img/footer/facebook-logo.svg" alt="Facebook" class="social-icon">
+                </a></li>
+                <li><a href="https://www.instagram.com/allcook">
+                    <img src="./img/footer/insta-logo.svg" alt="Instagram" class="social-icon">
+                </a></li>
+                <li><a href="https://www.linkedin.com/allcook">
+                    <img src="./img/footer/linkedin-logo.svg" alt="linkedin" class="social-icon">
+                </a></li>
+            </ul>
+
+            <div class="footer-logo mobile">
+                <img src="./img/footer/logo-footer.svg" alt="Allcook SA">
+            </div>
+        </nav>
+        <div class="footer-copyright">
+            <p>
+                Allcook SA
+                Avenue de Rumine 13, CH-1005, Lausanne <br>
+                <a href="mailto:service@allcook.kitchen">service@allcook.kitchen</a> <br>
+                <a href="tel:+41213119344" class="phone">+41 21 311 93 44</a> <br>
+            </p>
+            <div class="footer-logo">
+                <img src="./img/footer/logo-footer.svg" alt="Allcook SA">
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
